@@ -1,9 +1,8 @@
-//teste de commit
 
 //===========================================================================
 // projet : ball and plate
 // auteur : Bouhdid Mounib
-// date de la derniere modification : 06/02/26
+// date de la derniere modification : 22/02/26
 //===========================================================================
 
 #include <M5Stack.h>              // Ecran + boutons + init M5
@@ -43,7 +42,7 @@ float adcVersCm(int adc) {
 // =========================
 // AFFICHAGE TITRE
 // =========================
-void ecranTitre(const char* titre) {
+void ecranTitre(string titre) {
   M5.Lcd.fillScreen(BLACK);
   M5.Lcd.setTextSize(2);
   M5.Lcd.setCursor(0, 0);
@@ -61,7 +60,7 @@ void lireDalle() {
   pinMode(26, INPUT);
   digitalWrite(2, HIGH);
   digitalWrite(5, LOW);
-  delay(50);
+  delay(5);
   x = analogRead(25);
 
   // Lecture axe Y
@@ -71,7 +70,7 @@ void lireDalle() {
   pinMode(5, INPUT);
   digitalWrite(25, HIGH);
   digitalWrite(26, LOW);
-  delay(50);
+  delay(5);
   y = analogRead(2);
 
   // Conversion en pixels
