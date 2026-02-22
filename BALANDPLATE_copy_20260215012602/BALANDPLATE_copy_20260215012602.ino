@@ -1,5 +1,5 @@
-//teste github kpa 
-//teste github kpa 2
+//teste de commit
+
 //===========================================================================
 // projet : ball and plate
 // auteur : Bouhdid Mounib
@@ -13,38 +13,23 @@
 #include <math.h>        // powf() pour la formule télémètre (ADC -> cm)
 #include <Wire.h>        // I2C (joystick SDA=21 / SCL=22)
 
-// =========================
-// MODES
-// 0 = dalle
-// 1 = servos
-// 2 = telemetres + joystick
-// =========================
+
 int modeActuel = 0;
 
-// =========================
-// SERVOS
-// =========================
 Servo servo1;
 Servo servo2;
 int pinServo1 = 12;
 int pinServo2 = 16;
 
-// =========================
-// TELEMETRES IR
-// =========================
 int pinIR1 = 35;
 int pinIR2 = 36;
 
-// =========================
-// DALLE RESISTIVE
-// =========================
 int x, y;
 int px, py;
-
-// =========================
-// JOYSTICK
-// =========================
 M5UnitJoystick2 joystick2;
+
+
+
 
 // =========================
 // CONVERSION ADC -> CM
