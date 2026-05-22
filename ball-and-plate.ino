@@ -332,4 +332,4 @@ void loop() {
     joystick2.get_joy_adc_16bits_value_xy(&joyX, &joyY);
     afficherDebug(d1, d2);
   }
-}
+} //je teste voir si ca marche 
