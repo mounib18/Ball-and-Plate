@@ -3,7 +3,7 @@
 // auteur : Bouhdid Mounib
 // version finale - PID + mode debug + joystick manuel
 //===========================================================================
-
+//comit final changement a venir ameloration de la clarter du code et commentaire 
 #include <M5Stack.h>
 #include "m5_unit_joystick2.hpp"
 #include <ESP32Servo.h>
@@ -332,4 +332,4 @@ void loop() {
     joystick2.get_joy_adc_16bits_value_xy(&joyX, &joyY);
     afficherDebug(d1, d2);
   }
-} //je teste voir si ca marche 
+} 
